@@ -1,0 +1,110 @@
+* { /*Estilos CSS para ponerlo bonito
+	padding: 0; /*fuera márgenes*/
+	margin: 0;
+	-webkit-box-sizing: border-box; /*Caja*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url("fotos/image.jpg");
+	font-size: 16px;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+}
+
+h1{
+    text-align: center;
+    margin: 100px 0; 
+}
+.wrap { /*Contendeor wrap*/
+	width: 100%;
+	max-width: 550px;
+	margin: auto;
+	background: #000000;
+    
+}
+
+form {
+	width: 100%;
+	margin: 150px 0;
+	padding: 35px;
+	background-image: url("fotos/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	border-top:4px solid #07c958; 
+}
+
+/*Accedemos a los input que hemos creado*/
+form input[type="text"],
+form input[type="day"],
+
+
+/*Estado focus (cuando está seleccionado) */
+form input[type="text"]:focus{
+	color:#000000;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+	background-color: #93f7a8e1;
+}
+
+form input[type="password"]{
+	color: #000000;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+	background-color: #93f7a8e1;
+    
+}
+
+form input[type="email"]{
+	color: #000000;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+	background-color: #93f7a8e1;
+    
+}
+/*form input[type="day"]:focus,*/
+
+
+/*Reglas para ancho y alto del formulario*/
+
+
+label {
+	color:#0000;
+	font-family:"Roboto", Arial, sans-serif, helvetica;
+	display: block;
+}
+
+/*Estilos para los errores */
+.alert {
+	padding: 1em;
+	color:#fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.alert.error {
+	background: #F2DEDE;
+	border:1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success {
+	background: #4CAF50;
+}
+
+/*Estilo del botón de envío*/
+.btn {
+    border: none; 
+    color: black; 
+    padding: 15px; 
+    cursor: pointer; 
+    font-size: 1em;
+    border-radius: 5px;
+    border:none;
+    float: right;
+} 
+.primary {background-color: rgb(255, 255, 255); border: 2px solid #07c958;} 
+.primary:hover {background: #07c958; color: white;}
